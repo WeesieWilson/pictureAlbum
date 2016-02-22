@@ -1,0 +1,25 @@
+.inactive{
+  display: none;
+}
+
+.firstRowWrapper, .secondRowWrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.firstRowWrapper img, .secondRowWrapper img {
+  height: 300px;
+  width: 300px;
+  margin: 7%;
+}
+
+.firstRowWrapperAlbum, .secondRowWrapperAlbum{
+  display: flex;
+  justify-content: center;
+}
+
+.firstRowWrapperAlbum img, .secondRowWrapperAlbum img {
+  height: 300px;
+  width: 300px;
+  margin: 7%;
+}
