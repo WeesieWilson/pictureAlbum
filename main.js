@@ -1,53 +1,54 @@
-
-var albumCoverOneThree = "";
-var albumFilterOne = allAlbums.filter(function(el){
-  return el.albumTitle === 'Album One' || el.albumTitle === 'Album Two' || el.albumTitle === 'Album Three'
-});
-var albumCoverFunction = albumFilterOne.forEach(function(el){
-  albumCoverOneThree +=
-  "<img rel= 'insideAlbum' src ='"
+// MAKES THE ALBUM COVER PICTURE APPEAR
+var albumCover = "";
+var albumCoverFunction = allAlbums.forEach(function(el){
+  albumCover +=
+  "<img rel= 'insideAlbum' id= '" + el.albumTitle + "' src ='"
   + el.albumCover
   +"' />"
 });
 
-$('.firstRowWrapper').prepend(albumCoverOneThree);
-
-
-var albumCoverFourSix = "";
-var albumFilterTwo = allAlbums.filter(function(el){
-  return el.albumTitle === 'Album Four' || el.albumTitle === 'Album Five' || el.albumTitle === 'Album Six'
-});
-var albumCoverFunctionTwo = albumFilterTwo.forEach(function(el){
-  albumCoverFourSix +=
-  "<img rel= 'insideAlbum' src ='"
-  + el.albumCover
-  +"' />"
-});
-
-$('.secondRowWrapper').prepend(albumCoverFourSix);
+$('.albumContainer').prepend(albumCover);
 
 
 
-var albumCoverRel = $('.firstRowWrapper').find('img');
+
+
+// WHEN THE ALBUM COVER PICTURE IS CLICKED
+// MAKING THE COVER PHOTO CORRESPOND TO ALBUM
+var albumCoverRel = $('.albumContainer').find('img');
+
 albumCoverRel.click(function(event){
   event.preventDefault();
   var changePage = '.' + $(this).attr('rel');
   $(changePage).siblings('div').addClass('inactive');
   $(changePage).removeClass('inactive');
-
+  var album = $(this).attr('id');
+  var albumToPutOnPage = allAlbums.filter(function(el){
+    return el.albumTitle === album;
+  }).pop();
+  var albumHtmlStr="";
+  albumToPutOnPage.photos.forEach(function(el){
+   albumHtmlStr +=
+   "<img rel= 'picturePage' id= '" + el.photoName + "' src ='"
+   + el.photoThumb
+   +"' />";
+  });
+  $('.pictureContainer').prepend(albumHtmlStr);
 });
 
 
-var photosOneThree = "";
-var photosFilterOne = albumFilterOne.filter(function(el){
-  return el.photos.photoName === 'Photo One' || el.photos.photoName === 'Photo Two' || el.photos.photoName === 'Photo Three'
-});
 
-var albumFunction = photosFilterOne.forEach(function(el){
-  photosOneThree +=
-  "<img rel= 'picturePage' src ='"
-  + el.photos.photoThumb
-  +"' />"
-});
 
-$('.firstRowWrapperAlbum').prepend(photosOneThree);
+//WHEN THE PICTURE IS CLICKED AND ENLARGED
+
+$('.pictureContainer').on("click",'img', function(el) {
+  event.preventDefault();
+  var changePage = '.' + $(this).attr('rel');
+  $(changePage).siblings('div').addClass('inactive');
+  $(changePage).removeClass('inactive');
+  var imgSrc = $(this).attr('src');
+  var photoPage = "<img src ='"
+  + imgSrc
+  +"' />";
+  $('.picturePage').prepend(photoPage);
+});

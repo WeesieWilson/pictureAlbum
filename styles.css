@@ -2,24 +2,61 @@
   display: none;
 }
 
-.firstRowWrapper, .secondRowWrapper{
+header{
+  background-color: lightblue;
+  width: 100%;
+  height: 100px;
+}
+
+.albumContainer{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.firstRowWrapper img, .secondRowWrapper img {
+.albumContainer img {
   height: 300px;
   width: 300px;
-  margin: 7%;
+  margin: 2%;
 }
 
-.firstRowWrapperAlbum, .secondRowWrapperAlbum{
+.insideAlbum{
+  display: flex;
+
+}
+
+aside{
+  background-color: lightgrey;
+  width: 20%;
+  margin-left: -1%;
+  margin-top: -1%;
+}
+
+.albumButton{
+  background-color: lightblue;
+  height: 50px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+section{
+  width: 83%;
+
+}
+
+.pictureContainer{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.firstRowWrapperAlbum img, .secondRowWrapperAlbum img {
+.pictureContainer img {
   height: 300px;
   width: 300px;
-  margin: 7%;
+  margin: 2%;
+}
+
+.picturePage img{
+  border: 1px black solid;
 }
