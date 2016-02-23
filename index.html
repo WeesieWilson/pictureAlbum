@@ -5,6 +5,10 @@
     <title></title>
       <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" media="screen" title="no title" charset="utf-8">
       <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+      <script type="text/template" id="imageTemplate">
+        <img rel= 'insideAlbum' id= '<%= albumTitle %>' src= albumCover/>
+
+      </script>
   </head>
   <body>
 
@@ -15,12 +19,7 @@
 
     <div class="insideAlbum inactive">
       <aside>
-        <div class="albumButton">Album Name</div>
-        <div class="albumButton"></div>
-        <div class="albumButton"></div>
-        <div class="albumButton"></div>
-        <div class="albumButton"></div>
-        <div class="albumButton"></div>
+
       </aside>
       <section>
         <div class="pictureContainer">
@@ -29,7 +28,9 @@
       </section>
     </div>
 
-    <div class="picturePage inactive"></div>
+    <div class="picturePage inactive">
+      <div class="backButton" rel="insideAlbum"></div>
+    </div>
 
    <script src="bower_components/underscore/underscore.js" charset="utf-8"></script>
    <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>

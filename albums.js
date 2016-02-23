@@ -1,191 +1,191 @@
 var allAlbums =[
   { type: 'album',
-  albumTitle: 'Album One',
+  albumTitle: 'Wrightsville',
   albumCover: 'images/one/cover.jpg',
     photos:[
       {photoName: 'Photo One',
       photoThumb: 'images/one/thumb/one.jpg',
-      photoFull: 'images/one/full/one.jpg',
+
       },
       {photoName: 'Photo Two',
       photoThumb: 'images/one/thumb/two.jpg',
-      photoFull: 'images/one/full/two.jpg',
+
       },
       {photoName: 'Photo Three',
       photoThumb: 'images/one/thumb/three.jpg',
-      photoFull: '',
+
       },
       {photoName: 'Photo Four',
       photoThumb: 'images/one/thumb/four.jpg',
-      photoFull: '',
+
       },
       {photoName: 'Photo Five',
       photoThumb: 'images/one/thumb/five.jpg',
-      photoFull: '',
+
       },
       {photoName: 'Photo Six',
       photoThumb: 'images/one/thumb/six.jpg',
-      photoFull: '',
+
       },
     ],
 
   },
 
     { type: 'album',
-    albumTitle: 'Album Two',
+    albumTitle: 'Miami',
     albumCover: 'images/two/cover.jpg',
       photos:[
         {photoName: 'Photo One',
         photoThumb: 'images/two/thumb/one.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Two',
         photoThumb: 'images/two/thumb/two.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Three',
         photoThumb: 'images/two/thumb/three.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Four',
         photoThumb: 'images/two/thumb/four.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Five',
         photoThumb: 'images/two/thumb/five.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Six',
         photoThumb: 'images/two/thumb/six.jpg',
-        photoFull: '',
+
         },
       ],
 
     },
 
     { type: 'album',
-    albumTitle: 'Album Three',
+    albumTitle: 'Folly',
     albumCover: 'images/three/cover.jpg',
       photos:[
         {photoName: 'Photo One',
         photoThumb: 'images/three/thumb/one.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Two',
         photoThumb: 'images/three/thumb/two.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Three',
         photoThumb: 'images/three/thumb/three.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Four',
         photoThumb: 'images/three/thumb/four.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Five',
         photoThumb: 'images/three/thumb/five.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Six',
         photoThumb: 'images/three/thumb/six.jpg',
-        photoFull: '',
+
         },
       ],
 
     },
 
     { type: 'album',
-    albumTitle: 'Album Four',
+    albumTitle: 'Charleston',
     albumCover: 'images/four/cover.jpg',
       photos:[
         {photoName: 'Photo One',
         photoThumb: 'images/four/thumb/one.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Two',
         photoThumb: 'images/four/thumb/two.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Three',
         photoThumb: 'images/four/thumb/three.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Four',
         photoThumb: 'images/four/thumb/four.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Five',
         photoThumb: 'images/four/thumb/five.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Six',
         photoThumb: 'images/four/thumb/six.jpg',
-        photoFull: '',
+
         },
       ],
 
     },
 
     { type: 'album',
-    albumTitle: 'Album Five',
+    albumTitle: 'Mexico',
     albumCover: 'images/five/cover.jpg',
       photos:[
         {photoName: 'Photo One',
         photoThumb: 'images/five/thumb/one.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Two',
         photoThumb: 'images/five/thumb/two.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Three',
         photoThumb: 'images/five/thumb/three.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Four',
         photoThumb: 'images/five/thumb/four.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Five',
         photoThumb: 'images/five/thumb/five.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Six',
         photoThumb: 'images/five/thumb/six.jpg',
-        photoFull: '',
+
         },
       ],
 
     },
 
     { type: 'album',
-    albumTitle: 'Album Six',
+    albumTitle: 'Sullivans',
     albumCover: 'images/six/cover.jpg',
       photos:[
         {photoName: 'Photo One',
         photoThumb: 'images/six/thumb/one.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Two',
         photoThumb: 'images/six/thumb/two.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Three',
         photoThumb: 'images/six/thumb/three.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Four',
         photoThumb: 'images/six/thumb/four.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Five',
         photoThumb: 'images/six/thumb/five.jpg',
-        photoFull: '',
+
         },
         {photoName: 'Photo Six',
         photoThumb: 'images/six/thumb/six.jpg',
-        photoFull: '',
+
         },
       ],
 

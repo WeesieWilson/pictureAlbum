@@ -32,12 +32,18 @@ aside{
   margin-top: -1%;
 }
 
-.albumButton{
+
+aside p{
   background-color: lightblue;
   height: 50px;
   width: 80%;
   margin: 0 auto;
   margin-top: 10%;
+}
+
+aside p:hover{
+  background-color: lightgrey;
+  color: blue;
 }
 
 section{
@@ -57,6 +63,23 @@ section{
   margin: 2%;
 }
 
+.picturePage{
+  display: flex;
+  justify-content: center;
+}
+
 .picturePage img{
   border: 1px black solid;
+  height: 500px;
+}
+.backButton{
+  background-color: black;
+  width: 10%;
+  height: 100px;
+}
+
+
+
+.inactive{
+  display: none;
 }

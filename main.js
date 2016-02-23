@@ -2,14 +2,14 @@
 var albumCover = "";
 var albumCoverFunction = allAlbums.forEach(function(el){
   albumCover +=
-  "<img rel= 'insideAlbum' id= '" + el.albumTitle + "' src ='"
+  "<img rel= 'insideAlbum' id= '"
+  + el.albumTitle
+  + "' src ='"
   + el.albumCover
   +"' />"
 });
 
 $('.albumContainer').prepend(albumCover);
-
-
 
 
 
@@ -29,12 +29,52 @@ albumCoverRel.click(function(event){
   var albumHtmlStr="";
   albumToPutOnPage.photos.forEach(function(el){
    albumHtmlStr +=
-   "<img rel= 'picturePage' id= '" + el.photoName + "' src ='"
+   "<img rel= 'picturePage' id= '"
+   + el.photoName
+   + "' src ='"
    + el.photoThumb
    +"' />";
   });
   $('.pictureContainer').prepend(albumHtmlStr);
 });
+
+
+
+
+
+var albumStr="";
+var newAlbum = allAlbums.forEach(function(el){
+ albumStr +=
+ "<p rel= '"
+ + el.albumTitle
+ + "'>"
+ + el.albumTitle
+ + "</p>"
+});
+$('aside').html(albumStr);
+
+
+  var asideButton = $('aside').find('p');
+
+  asideButton.click(function(event){
+    event.preventDefault();
+    var album = $(this).attr('rel');
+    var albumToPutOnPage = allAlbums.filter(function(el){
+      return el.albumTitle === album;
+    }).pop();
+    var albumHtmlStr="";
+    albumToPutOnPage.photos.forEach(function(el){
+     albumHtmlStr +=
+     "<img rel= 'picturePage' id= '"
+     + el.photoName
+     + "' src ='"
+     + el.photoThumb
+     +"' />";
+    });
+    $('.pictureContainer').html(albumHtmlStr);
+  });
+
+
 
 
 
@@ -50,5 +90,15 @@ $('.pictureContainer').on("click",'img', function(el) {
   var photoPage = "<img src ='"
   + imgSrc
   +"' />";
-  $('.picturePage').prepend(photoPage);
+  $('.picturePage').append(photoPage);
+});
+
+  var backImg = $('.picturePage').find('img');
+
+  $(".backButton").on("click", function(event) {
+  event.preventDefault();
+  var changePage = '.' + $(this).attr('rel');
+  $(changePage).siblings('div').addClass('inactive');
+  $(changePage).removeClass('inactive');
+  $(backImg).addClass('inactive');
 });
